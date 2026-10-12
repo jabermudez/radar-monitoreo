@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7151ed">
+  <meta name="description" content="Explora tus presaberes sobre monitoreo de redes. Diagnóstico interactivo para la ficha 3399813.">
+  <title>Radar · Presaberes de monitoreo</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./experiencia.css">
+  <script defer src="./preguntas.js"></script>
+  <script defer src="./motor.js"></script>
+  <script defer src="./graficos.js"></script>
+  <script defer src="./interacciones.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="topbar"><a class="brand" href="./index.html" aria-label="Radar, inicio"><span class="brand-icon">◎</span> radar<span class="brand-dot">.</span></a><span class="course">GESTIÓN DE REDES DE DATOS <b>Ficha 3399813</b></span><span class="header-badge"><span class="live-dot"></span> EXPLORACIÓN DE PRESABERES</span></header>
+  <main id="contenido" tabindex="-1">
+    <section id="inicio" class="landing">
+      <div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> TU PRÓXIMA CONEXIÓN EMPIEZA AQUÍ</p><h1>Tu conocimiento<br>ya tiene <em>señal.</em></h1><p class="intro">Descubre qué sabes sobre monitoreo de redes y encuentra tu próxima oportunidad para aprender.</p><div class="facts"><span><b>40</b> minutos</span><span><b>30</b> preguntas</span><span><b>5</b> temas</span></div><p class="soft-note">Lo que ya sabes de redes y servidores es parte de esta misión. Explóralo y descubre hasta dónde puedes llegar.</p></div>
+      <div class="radar-panel"><div class="radar-art" aria-hidden="true"><div class="radar-ring ring1"></div><div class="radar-ring ring2"></div><div class="radar-ring ring3"></div><div class="radar-sweep"></div><span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><span class="radar-center">◎</span></div><div class="signal-label"><span class="live-dot"></span> CONECTANDO CON TUS PRESABERES</div><div class="float-chip chip1">↗ Indicadores</div><div class="float-chip chip2">⌁ Servicios</div><button id="radar-explore" class="radar-control" type="button" aria-pressed="false">⌁ Explorar señal</button></div>
+      <div class="start-card" id="start-card"><div><p class="eyebrow">PREPARA TU EXPLORACIÓN</p><h2>¿Quién está al frente del radar?</h2><p>Interpreta gráficas, conecta conceptos y resuelve situaciones de switches, routers y servidores. Responde con lo que sabes hoy.</p></div><form id="start-form"><label for="nombre">Nombre del aprendiz <span>(opcional)</span></label><input id="nombre" name="nombre" maxlength="90" autocomplete="name" placeholder="Escribe tu nombre"><button class="button primary" type="submit">Comenzar mi diagnóstico <span>→</span></button><p class="form-note">Al comenzar se activa el tiempo. El avance se guarda en este navegador y el reloj sigue si cierras la página.</p></form><div id="resume-box" hidden><p>Hay una exploración guardada en este navegador.</p><button id="resume" class="button primary">Retomar exploración →</button><button id="discard" class="text-button">Borrar avance y empezar de nuevo</button></div></div>
+      <section class="telemetry-lab" aria-label="Explorador de monitoreo"><div class="lab-heading"><div><p class="eyebrow">UN VISTAZO A LO QUE VAS A EXPLORAR</p><h2>Las métricas cuentan una historia.</h2></div><div class="scenario-switch" role="group" aria-label="Cambiar escenario simulado"><button type="button" data-demo="normal" aria-pressed="true">Ventana normal</button><button type="button" data-demo="evento" aria-pressed="false">Simular un evento ↗</button></div></div><p id="demo-status" class="demo-status" role="status"></p><div id="demo-grid" class="demo-grid"></div></section><div class="topic-strip"><span>◎ Fundamentos</span><span>↗ Indicadores</span><span>▦ Switches y routers</span><span>▤ Windows / Linux Server</span><span>⌁ Servicios y diagnóstico</span></div>
+    </section>
+    <section id="prueba" hidden>
+      <div class="exam-heading"><div><p class="eyebrow">TU EXPLORACIÓN ESTÁ EN MARCHA</p><h1>Lee, conecta y decide.</h1><p id="learner-label"></p></div><div class="timer-box" role="timer" aria-label="Tiempo restante"><span>TIEMPO RESTANTE</span><b id="timer">40:00</b></div></div>
+      <p id="timer-alert" class="warning" role="status" hidden>Quedan menos de 5 minutos. Revisa las preguntas pendientes.</p>
+      <div class="exam-layout"><aside class="navigation-card"><div class="nav-title"><b>Mapa de la misión</b><span id="answered-count"></span></div><progress id="progress" max="30" value="0" aria-label="Preguntas completas"></progress><nav id="question-map" aria-label="Navegar entre preguntas"></nav><p class="map-key"><span class="key-dot"></span> Respondida · ámbar: parcial · borde: actual</p><p id="encouragement" class="encouragement">Cada respuesta ayuda a reconocer tu punto de partida.</p><button id="review-open" class="button secondary">Revisar y finalizar</button></aside><div><article class="question-card"><div class="question-meta"><span id="topic-label" class="pill"></span><span id="type-label"></span></div><p id="question-counter" class="eyebrow"></p><h2 id="question-text" tabindex="-1"></h2><p id="question-help"></p><div id="case-visual"></div><div id="answers"></div><p id="response-status" class="answer-status" role="status"></p><div class="question-footer"><button id="prev" class="button secondary">← Anterior</button><button id="next" class="button primary">Siguiente →</button></div></article><p class="exam-note">Responde con lo que sabes hoy. Podrás aprender de las explicaciones al terminar.</p></div></div>
+    </section>
+    <section id="resultados" hidden></section>
+    <p id="storage-warning" class="warning" role="status" hidden>No se pudo guardar el avance en este navegador. Mantén esta pestaña abierta y descarga el resultado al finalizar.</p>
+    <p id="fatal-error" class="warning" role="alert" hidden></p>
+  </main>
+  <footer><span>RADAR 2.0 · Tus saberes, en conexión.</span><span>Monitoreo de infraestructura · SENA, ficha 3399813</span></footer>
+  <dialog id="finish-dialog"><form method="dialog"><p class="eyebrow">CIERRE DE LA EXPLORACIÓN</p><h2>¿Listo para ver tu punto de partida?</h2><p id="finish-summary"></p><p>Las respuestas pendientes puntúan cero. Una vez finalizada la sesión, no podrás cambiarlas.</p><div class="dialog-actions"><button class="button secondary" value="cancel">Seguir revisando</button><button id="finish-confirm" class="button primary" value="finish">Finalizar y ver resultado</button></div></form></dialog>
+  <noscript><p class="warning">Activa JavaScript en tu navegador para realizar el diagnóstico.</p></noscript>
+</body>
+</html>
